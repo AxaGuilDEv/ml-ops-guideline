@@ -1,6 +1,9 @@
 # ml-ops-guideline
 MLOps guideline how to make your ml project suitable for production
 
+
+- Test Unitaire des modules pour comprendre ce qu'il se passe car c'est essentiellement technique => surtout penser que demain je ne serais plus
+
 - Ne doit pas être dupliqué (dans un dommaine)
   - le code d'inference 
   - le code de pre-processing

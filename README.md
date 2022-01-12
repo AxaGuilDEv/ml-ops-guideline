@@ -9,6 +9,10 @@ MLOps guideline how to make your ml project suitable for production
   - le code de pre-processing
   - le code de post-processing
 
+- Dans l'artifact du model, il faut pousser tout ce qui est nécéssaire à l'inférence :
+Par exemple pour un yolov4, il faut le model, la config et la liste des labels
+le model : model.weights, yolov4.cfg, obj.data 
+
 Pourquoi => parce que demain si quelqu'un retouche le projet il ne verra peut être pas toutes les duplication et créera des bug
 
 - Le scoring doit utiliser le code d'inférence qui sera hébergé en production

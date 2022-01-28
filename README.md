@@ -7,7 +7,7 @@ Pourquoi => pour des raisons de sécurité (version non maintenu) et d'obsolecen
 
 - Test Unitaire des modules pour comprendre ce qu'il se passe car c'est essentiellement technique => surtout penser à son collègue qui reprendra le projet quand vous ne serrez pas ou plus là
 
-- Ne doit pas être dupliqué (dans un dommaine)
+- Ne doit pas être dupliqué (dans un domaine fonctionel)
   - le code d'inference 
   - le code de pre-processing
   - le code de post-processing

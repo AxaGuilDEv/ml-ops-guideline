@@ -24,4 +24,4 @@ Pourquoi => parce que demain si quelqu'un retouche le projet il ne verra peut-ê
   - si la production est en CPU le scoring doit être réalisé avec du CPU
   - si la production est en GPU le scoring doit être réalisé avec du GPU
 
-Pourquoi => le scoring qui sera annoncé au métier ne sera pas le bon, le même que en production
+Pourquoi => le scoring qui sera annoncé aux utilisateurs ne sera pas le bon, le même que en production

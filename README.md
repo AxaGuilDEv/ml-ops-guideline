@@ -1,19 +1,24 @@
 # ml-ops-guideline
 MLOps guideline how to make your ml project suitable for production
 
+- Python 3.8 minimum
 
-- Test Unitaire des modules pour comprendre ce qu'il se passe car c'est essentiellement technique => surtout penser que demain je ne serais plus
+Pourquoi => pour des raisons de sécurité (version non maintenu) et d'obsolecenses des applications (mise à jour trés coûteuse)
+
+- Test Unitaire des modules pour comprendre ce qu'il se passe car c'est essentiellement technique => surtout penser à son collègue qui reprendra le projet quand vous ne serrez pas ou plus là
 
 - Ne doit pas être dupliqué (dans un dommaine)
   - le code d'inference 
   - le code de pre-processing
   - le code de post-processing
 
+Pourquoi => parce que demain si quelqu'un retouche le projet il ne verra peut-être pas toutes les duplications et créera des bogues
+
 - Dans l'artifact du model, il faut pousser tout ce qui est nécéssaire à l'inférence :
 Par exemple pour un yolov4, il faut le model, la config et la liste des labels
 le model : model.weights, yolov4.cfg, obj.data 
 
-Pourquoi => parce que demain si quelqu'un retouche le projet il ne verra peut être pas toutes les duplication et créera des bug
+Pourquoi => parce que demain si quelqu'un retouche le projet il ne verra peut-être pas toutes les duplications et créera des bogues
 
 - Le scoring doit utiliser le code d'inférence qui sera hébergé en production
   - si la production est en CPU le scoring doit être réalisé avec du CPU

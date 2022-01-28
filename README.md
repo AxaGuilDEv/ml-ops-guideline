@@ -1,6 +1,10 @@
 # ml-ops-guideline
+
 MLOps guideline how to make your ml project suitable for production
 
+## Gestion des branches
+
+On utilise GitFlow https://githubflow.github.io/
 
 ## Règle a vérifier pour valider une PullRequest
 
